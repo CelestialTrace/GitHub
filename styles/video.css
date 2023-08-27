@@ -1,0 +1,104 @@
+
+
+ .thumbnail{
+    width: 100%;
+    border-radius: 10px;
+    /*
+    display: block;
+    object-fit: cover;
+    object-position: center;*/
+    /*
+    block: entire line
+    inline block: takes space needed
+    inline: appear within a line of text*/
+}
+
+
+ .video-title{
+    margin-top: 0;
+    font-weight: 700;
+    margin-bottom: 11px;
+    margin-top: 0px;
+}
+ .video-author{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 3.5px;
+ }
+ .video-stats{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ .video-preview{
+    /* width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px; */
+}
+ .infoGrid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+ /* 
+with grid system we no longer need to format them
+by numbers which will leave 1px space in between each other
+.picDiv{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    background-color: aqua;
+}
+.statsDiv{
+    display: inline-block;
+    width: 200px;
+    background-color: rebeccapurple;
+} */
+ .channelPic{
+    width: 40px;
+    border-radius: 50%;
+}
+ .thumbnailDiv{
+    margin-bottom: 12px;
+    position: relative;
+
+}
+ .videoGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+@media (max-width: 750px){
+    .videoGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .videoGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .videoGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+.videoTime{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 12px; 
+    padding: 4px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}

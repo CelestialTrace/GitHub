@@ -1,0 +1,203 @@
+/*if want to have fix content size use flex
+if want a grid so fixed space design use grid*/
+
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(202, 202, 202);
+
+    z-index: 100;
+}
+
+/*flex box doesn't affect more than 1 div, so you have to
+turn each div into a flex box*/
+.leftSection{
+    display: flex;   
+}
+
+.hamburger{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.hamburger:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+.youtubeLogo{
+    height: 20px;
+}
+
+.middleSection{
+    display: flex;
+    flex: 1;
+    max-width: 640px;  
+    margin-left: 40px;
+    margin-right: 35px;
+    align-items: center;
+}
+
+.searchBar{
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 16px;
+
+    /* 
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192); 
+    ShortCut: */
+    border: 1px solid rgb(192, 192, 192);
+
+    border-radius: 20px;
+
+    /*for inside shadow use inset*/
+    box-shadow: inset 1px 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar::placeholder{
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.searchButton{
+    width: 23.5px;
+    background-color: transparent;
+    border: none;
+    margin-top: 3px;
+    padding-top: 2px;
+}
+
+.searchButtonBox{
+    /* border-width: 0.05px; */
+    height: 37.6px;
+    width: 60px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    margin-left: -60px;
+    transition: 0.3s;
+    
+}
+
+.searchButtonBox, .voiceSearchBox, .uploadIconBox, .notificationsIconBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.searchButtonBox .toolTip, .voiceSearchBox .toolTip,
+.uploadIconBox .toolTip, .notificationsIconBox .toolTip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.3s;
+    bottom: -38px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.searchButtonBox:hover .toolTip, .voiceSearchBox:hover .toolTip,
+.uploadIconBox:hover .toolTip, .notificationsIconBox:hover .toolTip{
+    opacity: 100;
+}
+
+.searchButtonBox:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+.voiceSearch{
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: -2px;
+    padding-top: 5px;
+
+}
+
+.voiceSearchBox{
+    height: 37.6px;
+    width: 37.6px;
+    border-radius: 19px;
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(245, 245, 245);
+    transition: 0.3s;
+    position: relative;
+
+}
+
+
+.voiceSearchBox:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.rightSection{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.uploadIcon{
+    width: 24px;
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 24px;
+    position: relative;
+    /* margin-left: 45px; */
+}
+
+
+.uploadIcon:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+.notificationsIcon{
+    width: 24px;
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 24px;
+    /* margin-left: 25px; */
+}
+
+.notificationsIcon:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+.user{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+}
+
+.user:hover{
+    cursor: pointer;
+}

@@ -1,3 +1,294 @@
 <!DOCTYPE html>
 
-<h1>hell o word</h1>
+<!--position relative element written further down will appear on top of element written on top
+This doesn't happen with static elements-->
+
+<!--when using position absolute in relative object
+you can't use negative number to position the element like with margin-->
+
+<!--Formatting inheritance:
+format on the outer div for text will be inherent by all its inner div
+BUT doesn't inherent other things like bordering padding, margin-->
+<html>
+    <head>
+        <title>weetube.com</title>
+
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="leftSection">
+                <img class="hamburger" src="icons/hamburger-menu.svg">
+                <img class="youtubeLogo" src="icons/youtube-logo.svg">
+            </div>
+            <div class="middleSection">
+                <input class="searchBar" type="text" placeholder="Search">
+
+                <button class="searchButtonBox">
+                    <img class="searchButton" src="icons/search.svg">
+                    <div class="toolTip">Search</div>
+                </button>
+                <button class="voiceSearchBox">
+                    <img class="voiceSearch" src="icons/voice-search-icon.svg">
+                    <div class="toolTip">Search with your voice</div>
+                </button>
+
+            </div>
+            <div class="rightSection">
+                <div class="uploadIconBox">
+                    <img class="uploadIcon" src="icons/upload.svg">
+                    <div class="toolTip">Create</div>
+                </div>
+                <div class=".notificationsIconBox">
+                    <img class="notificationsIcon" src="icons/notifications.svg">
+                    <!-- <div class="toolTip">Notifications</div> -->
+                </div>
+    
+                <img class="user" src="profilePic/R.jpg">
+
+            </div>
+        </div>
+
+
+        <div class="sidebar">
+            <div class="sidebarLink">
+                <img class="home" src="icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebarLink">
+                <img class="sub" src="icons/subscriptions.svg">
+                <div>Subscription</div>
+            </div>
+            <div class="sidebarLink">
+                <img class="library" src="icons/library.svg">
+                <div>library</div>
+            </div>
+        </div>
+       
+       
+        <!--use nested layout using div for design-->
+
+        <div class="videoGrid">
+
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">
+                    <div class="videoTime">1:16:35</div>
+                </div>
+    
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/channels4_profile.jpg">
+                    </div>
+                    <div class="statsDiv"> 
+                        <p class = "video-title">peaceful and relaxing music</p>
+                        <p class="video-author">Surreal</p>
+                        <p class="video-stats">105k views &#183 1 month ago</p>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq710.webp">
+                    <div class="videoTime">1:28:17</div>
+                </div>
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/unnamed.jpg">
+                    </div>
+                    <div class="statsDiv">
+                        <p class= "video-title">MegaTHREAT: Why AI is So Dangerous & How It Could Destroy Humanities | Mo Gawdat</p>
+                        <p class="video-author">Tom Bilyeu</p>
+                        <p class="video-stats">746k views &#183 2 month ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">
+                    <div class="videoTime">1:16:35</div>
+                </div>
+    
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/channels4_profile.jpg">
+                    </div>
+                    <div class="statsDiv"> 
+                        <p class = "video-title">peaceful and relaxing music</p>
+                        <p class="video-author">Surreal</p>
+                        <p class="video-stats">105k views &#183 1 month ago</p>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq710.webp">
+                    <div class="videoTime">1:28:17</div>
+                </div>
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/unnamed.jpg">
+                    </div>
+                    <div class="statsDiv">
+                        <p class= "video-title">MegaTHREAT: Why AI is So Dangerous & How It Could Destroy Humanities | Mo Gawdat</p>
+                        <p class="video-author">Tom Bilyeu</p>
+                        <p class="video-stats">746k views &#183 2 month ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">
+                    <div class="videoTime">1:16:35</div>
+                </div>
+    
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/channels4_profile.jpg">
+                    </div>
+                    <div class="statsDiv"> 
+                        <p class = "video-title">peaceful and relaxing music</p>
+                        <p class="video-author">Surreal</p>
+                        <p class="video-stats">105k views &#183 1 month ago</p>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq710.webp">
+                    <div class="videoTime">1:28:17</div>
+                </div>
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/unnamed.jpg">
+                    </div>
+                    <div class="statsDiv">
+                        <p class= "video-title">MegaTHREAT: Why AI is So Dangerous & How It Could Destroy Humanities | Mo Gawdat</p>
+                        <p class="video-author">Tom Bilyeu</p>
+                        <p class="video-stats">746k views &#183 2 month ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">
+                    <div class="videoTime">1:16:35</div>
+                </div>
+    
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/channels4_profile.jpg">
+                    </div>
+                    <div class="statsDiv"> 
+                        <p class = "video-title">peaceful and relaxing music</p>
+                        <p class="video-author">Surreal</p>
+                        <p class="video-stats">105k views &#183 1 month ago</p>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq710.webp">
+                    <div class="videoTime">1:28:17</div>
+                </div>
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/unnamed.jpg">
+                    </div>
+                    <div class="statsDiv">
+                        <p class= "video-title">MegaTHREAT: Why AI is So Dangerous & How It Could Destroy Humanities | Mo Gawdat</p>
+                        <p class="video-author">Tom Bilyeu</p>
+                        <p class="video-stats">746k views &#183 2 month ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">
+                    <div class="videoTime">1:16:35</div>
+                </div>
+    
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/channels4_profile.jpg">
+                    </div>
+                    <div class="statsDiv"> 
+                        <p class = "video-title">peaceful and relaxing music</p>
+                        <p class="video-author">Surreal</p>
+                        <p class="video-stats">105k views &#183 1 month ago</p>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq710.webp">
+                    <div class="videoTime">1:28:17</div>
+                </div>
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/unnamed.jpg">
+                    </div>
+                    <div class="statsDiv">
+                        <p class= "video-title">MegaTHREAT: Why AI is So Dangerous & How It Could Destroy Humanities | Mo Gawdat</p>
+                        <p class="video-author">Tom Bilyeu</p>
+                        <p class="video-stats">746k views &#183 2 month ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">
+                    <div class="videoTime">1:16:35</div>
+                </div>
+    
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/channels4_profile.jpg">
+                    </div>
+                    <div class="statsDiv"> 
+                        <p class = "video-title">peaceful and relaxing music</p>
+                        <p class="video-author">Surreal</p>
+                        <p class="video-stats">105k views &#183 1 month ago</p>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnailDiv">
+                    <img class="thumbnail" src="thumbnails/hq710.webp">
+                    <div class="videoTime">1:28:17</div>
+                </div>
+                <div class="infoGrid">
+                    <div class="picDiv">
+                        <img class="channelPic" src="profilePic/unnamed.jpg">
+                    </div>
+                    <div class="statsDiv">
+                        <p class= "video-title">MegaTHREAT: Why AI is So Dangerous & How It Could Destroy Humanities | Mo Gawdat</p>
+                        <p class="video-author">Tom Bilyeu</p>
+                        <p class="video-stats">746k views &#183 2 month ago</p>
+                    </div>
+                </div>
+            </div>
+
+    </body>
+</html>
+
+    
+
+
+
+

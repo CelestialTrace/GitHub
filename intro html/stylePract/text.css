@@ -1,0 +1,55 @@
+p{
+    font-family: Arial; /*target all paragraph*/
+                        /*more specific target of stylizing have more piroity*/
+}
+
+.video-title{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    width: 300px;
+    line-height: 24x;
+    margin-bottom: 5;
+}
+
+.video-status{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top: 0;
+    margin-bottom: 20;
+}
+
+
+.author{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 70px;
+    
+}
+
+.ad{
+    margin-bottom: 50px;
+    background-color: rgb(227, 65, 64);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.shop{
+    color: darkgoldenrod;
+    margin-left: 12px;  /*how to achieve multiple spaces between words*/
+}
+
+.shop:hover{
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration: dotted;
+}
+
+.shep:hover{
+    text-decoration: line-through;
+}

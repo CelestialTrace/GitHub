@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>position</title>
+    </head>
+    <body style="
+        height: 3000px;
+        padding-top: 60px;
+        padding-left: 80px;">
+
+
+        <div style="
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0%;
+            left: 0px;
+            right: 0px;
+            height: 50px;
+            z-index: 123;
+            ">
+            header
+
+        </div>
+
+
+        <!--Fixed position is fixed on the window screens-->
+        <div style="background-color: greenyellow;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: 50px;
+        width: 70px;
+        ">
+            sidebar
+
+            <div style="background-color: cyan;
+            position: absolute;
+            top: 200px;
+            left: 0px;
+            right:0px;
+            ">
+                absolute
+    
+            </div>
+
+        </div>
+    
+
+        <!--Absolution position is fixed on the website 
+            Or if an position absolute elements is placed inside
+            of a position fixed element then the absolute element
+            become absolute relative to that fixed element which is very useful-->
+        <div style="background-color: cyan;
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        right:0px;
+        ">
+            absolute
+
+        </div>
+
+
+        <div style="background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: static;">
+            div1
+
+            <!--absolute don't do anything when inside
+            of static which is the default position-->
+            <div style="background-color: cyan;
+                position: absolute;
+                top: 175px;
+                right:5px;
+                ">
+                absolute
+            </div>
+        </div>
+
+        <div style="background-color: lightpink;
+        height: 200px;
+        width: 200px;
+        position: relative;">
+            div2
+
+            <div style="background-color: cyan;
+                position: absolute;
+                top: 175px;
+                right:5px;
+                z-index: 3;
+                ">
+                absolute
+            </div>
+        </div>
+    </body>
+</html>

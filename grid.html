@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <!--
+        - for grid, you specify the size first using
+        grid-template-column: 1px 2px; 
+        when you move the elements within the container
+        around the grid will hold its specified size.
+        - But flex box the elements size is specified within
+        that element so when you move it around the element
+        will retain its size
+    -->
+    <head>
+        <title>Grid Practice</title>
+    </head>
+
+
+    <body style="padding-bottom: 1000px;">
+
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px;">
+            <div style="background-color: aqua;">
+                div1
+            </div>
+            <div style="background-color: aquamarine;">
+                div2 <p>text</p>
+            </div>
+        </div>
+
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px 200px;
+            margin-top: 30px;
+            ">
+                <div style="background-color: aqua;">
+                    div1
+                </div>
+                <div style="background-color: aquamarine;">
+                    div2 <p>text</p>
+                </div>
+                <div style="background-color: blueviolet;">
+                    div3
+                </div>
+                <div style="background-color: aquamarine;">
+                    div2 
+                </div>
+        </div>
+        <!--fr takes up the percentage of the remain space of that grid-->
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            margin-top: 30px;
+            ">
+                <div style="background-color: aqua;">
+                    div1
+                </div>
+                <div style="background-color: aquamarine;">
+                    1fr <p>text</p>
+                </div>
+        </div>
+
+
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;
+            margin-top: 30px;
+            ">
+                <div style="background-color: aqua;">
+                    div1
+                </div>
+                <div style="background-color: aquamarine;">
+                    1fr <p>text</p>
+                </div>
+                <div style="background-color: aqua;">
+                    2fr <p>text</p>
+                </div>
+        </div>
+
+        <div style="
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 30px;
+            column-gap: 20px;
+            row-gap: 20px;
+            ">
+                <div style="background-color: aqua; height: 180px;">
+                    1fr
+                </div>
+                <div style="background-color: aquamarine; height: 180px;">
+                    1fr
+                </div>
+                <div style="background-color:bisque; height: 180px;">
+                    1fr
+                </div>
+                <div style="background-color: aquamarine; height: 180px;">
+                    1fr
+                </div>
+                <div style="background-color: bisque; height: 180px;">
+                    1fr
+                </div>
+                <div style="background-color:aqua; height: 180px;">
+                    1fr
+                </div>
+        </div>
+    </body>
+
+</html>
